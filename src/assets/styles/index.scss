@@ -84,7 +84,8 @@ body {
   }
 
   #header-wrapper {
-    background-image: url('../images/background.jpg');
+    background: linear-gradient(0deg,rgba(1, 122, 193, 0.9),rgba(1, 122, 193, 0.9)),url(../images/background.jpg);
+    background-blend-mode: multiply;
     background-size: cover;
     width: 100%;
     height: 25em;
@@ -96,7 +97,6 @@ body {
     }  
 
     .content {
-      background-color: rgba(0, 74, 117, 0.5);
       width: 100%;
       height: 25em;
       padding: 5em;
