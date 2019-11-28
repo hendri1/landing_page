@@ -161,6 +161,17 @@ body {
           .svg-inline--fa {
             font-size: 1.5em;
             color: #9e9e9e;
+
+            &.bar-one {
+              transform: rotate(90deg);
+            }
+    
+            &.bar-two {
+              position: absolute;
+              transform: rotate(270deg);
+              right: 15;
+              color: #CCC;
+            }
           }
         }
       }
