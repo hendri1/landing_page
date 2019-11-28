@@ -88,7 +88,7 @@ body {
     background-blend-mode: multiply;
     background-size: cover;
     width: 100%;
-    height: 25em;
+    height: 100vh;
     margin-top: 5em;
     transition: margin-top 300ms ease-in-out;
 
@@ -98,8 +98,8 @@ body {
 
     .content {
       width: 100%;
-      height: 25em;
-      padding: 5em;
+      height: 100vh;
+      padding: 10em 3em;
 
       #logo {
         top: 20;
@@ -352,7 +352,6 @@ body {
     #header-wrapper {
       margin-top: 7em;
       transition: margin-top 300ms ease-in-out;
-      height: 30em;
   
       &.remove-margin {
         margin-top: 0;
@@ -360,7 +359,6 @@ body {
 
       .content {
         padding: 5em 3em;
-        height: 30em;
 
         #logo {
           left: 40;
@@ -400,6 +398,17 @@ body {
 
     #footer-wrapper {
       margin-bottom: 16.5em;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-height: 480px) {
+  #header-wrapper {
+    height: 100vh;
+
+    .content {
+      height: 100vh;
+      padding: 10em 3em;
     }
   }
 }
@@ -505,8 +514,81 @@ body {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  body {
+
+    #header-wrapper {
+      height: 100vh;
+
+      .content {
+        padding: 12em 3em;
+        height: 100vh;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   body {
     font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  body {
+
+    p {
+      font-size: 1.2em;
+    }
+  
+    h1 {
+      font-size: 2.2em;
+    }
+  
+    h2 {
+      font-size: 2em;
+    }
+
+    #header-notification-wrapper {
+      .content {
+        .row {
+          p {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+
+    #header-wrapper {
+      height: 100vh;
+
+      .content {
+        padding: 18em 3em;
+        height: 100vh;
+      }
+    }
+
+    #footer-wrapper {
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  body {
+
+    p {
+      font-size: 1.4em;
+    }
+  
+    h1 {
+      font-size: 2.4em;
+    }
+  
+    h2 {
+      font-size: 2.2em;
+    }
   }
 }
